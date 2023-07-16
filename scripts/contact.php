@@ -1,5 +1,5 @@
 <?php
-if(isset($_GET['submit']))
+if(!isset($_GET['submit']))
 {
     echo "error; you need to submit the form!";
 }
