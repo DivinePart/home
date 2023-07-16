@@ -1,13 +1,13 @@
 <?php
-if(!isset($_GET['submit']))
+if(!isset($_POST['submit']))
 {
     echo "error; you need to submit the form!";
 }
-$name = $_GET['name'];
-$email = $_GET['email'];
-$number = $_GET['number'];
-$subject = $_GET['subject'];
-$message = $_GET['message'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$number = $_POST['number'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
 
 //Validate first
 if(empty($name)||empty($email))
